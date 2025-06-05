@@ -1,0 +1,9 @@
+[submodule "vendor/node-api-headers"]
+	path = vendor/node-api-headers
+	url = https://github.com/nodejs/node-api-headers.git
+[submodule "vendor/node-addon-api"]
+	path = vendor/node-addon-api
+	url = https://github.com/nodejs/node-addon-api.git
+[submodule "vendor/glslang"]
+	path = vendor/glslang
+	url = https://github.com/KhronosGroup/glslang.git

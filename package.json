@@ -1,0 +1,11 @@
+{
+  "name": "glsl_validate",
+  "version": "1.0.0",
+  "description": "A thin wrapper around glslang to validate WebGL 1.0 compliant shaders",
+  "license": "MIT",
+  "author": "mwilsnd",
+  "main": "./lib/index.js",
+  "scripts": {
+    "install": "cmake -S . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo && cmake --build build"
+  }
+}
