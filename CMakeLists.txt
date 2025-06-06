@@ -51,6 +51,12 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "AppleClang")
             LINK_DEPENDS ${PROJECT_SOURCE_DIR}/cmake/symbols.txt
             LINK_FLAGS "-undefined dynamic_lookup -bind_at_load"
     )
+elseif(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+    set_target_properties(
+        node-glslang
+        PROPERTIES
+            LINK_DEPENDS ${PROJECT_SOURCE_DIR}/cmake/symbols.def
+    )
 else()
     set_target_properties(
         node-glslang

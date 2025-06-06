@@ -1,0 +1,3 @@
+LIBRARY GLSL_VALIDATE
+EXPORTS
+    _napi_register_module_v1 @1
